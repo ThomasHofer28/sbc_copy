@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\source\ContentLoader.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="../source/GameObjectManager.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\RenderManager.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\StateManager.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\RigidBody.cpp">
+      <Filter>Engine\Source\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\BoxCollider.cpp">
+      <Filter>Engine\Source\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\CircleCollider.cpp">
+      <Filter>Engine\Source\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PhysicsManager.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Collider.cpp">
+      <Filter>Engine\Source\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="../source/Component.cpp">
+      <Filter>Engine\Source\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="../source/GameObject.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PolygonCollider.cpp">
+      <Filter>Engine\Source\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Gamepad.cpp">
+      <Filter>Engine\Source\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="../source/InputManager.cpp">
+      <Filter>Engine\Source\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QuickMaths.cpp">
+      <Filter>Engine\Source\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Map.cpp">
+      <Filter>Engine\Source\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\NLTmxMap.cpp">
+      <Filter>Engine\Source\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\AnimationComponent.cpp">
+      <Filter>Engine\Source\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="../source/SpriteRenderer.cpp">
+      <Filter>Engine\Source\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\LayerRenderer.cpp">
+      <Filter>Engine\Source\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\RenderComponent.cpp">
+      <Filter>Engine\Source\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="../source/Background.cpp">
+      <Filter>Engine\Source\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Player.cpp">
+      <Filter>Satanic Bird Cult\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="../source/EndState.cpp">
+      <Filter>Satanic Bird Cult\Source\Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="../source/GameState.cpp">
+      <Filter>Satanic Bird Cult\Source\Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="../source/MenuState.cpp">
+      <Filter>Satanic Bird Cult\Source\Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="../source/Game.cpp">
+      <Filter>Satanic Bird Cult\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="../source/State.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Bird.cpp">
+      <Filter>Satanic Bird Cult\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Debug.cpp">
+      <Filter>Engine\Source\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SoundManager.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Projectile.cpp">
+      <Filter>Satanic Bird Cult\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Wall.cpp">
+      <Filter>Satanic Bird Cult\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\TimerManager.cpp">
+      <Filter>Engine\Source\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\IntroState.cpp">
+      <Filter>Satanic Bird Cult\Source\Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\BirdWall.cpp">
+      <Filter>Satanic Bird Cult\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Pentagram.cpp">
+      <Filter>Satanic Bird Cult\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Spawn.cpp">
+      <Filter>Satanic Bird Cult\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Timer.cpp">
+      <Filter>Engine\Source\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ProjectileWall.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\ContentLoader.h">
+      <Filter>Engine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/GameObject.h">
+      <Filter>Engine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/GameObjectManager.h">
+      <Filter>Engine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhysicsManager.h">
+      <Filter>Engine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/RenderManager.h">
+      <Filter>Engine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StateManager.h">
+      <Filter>Engine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/AnimationComponent.h">
+      <Filter>Engine\Header\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/Background.h">
+      <Filter>Engine\Header\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/Component.h">
+      <Filter>Engine\Header\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\LayerRenderer.h">
+      <Filter>Engine\Header\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Map.h">
+      <Filter>Engine\Header\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RenderComponent.h">
+      <Filter>Engine\Header\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/InputManager.h">
+      <Filter>Engine\Header\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/Gamepad.h">
+      <Filter>Engine\Header\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RapidXML\rapidxml_iterators.hpp">
+      <Filter>Engine\Header\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RapidXML\rapidxml_print.hpp">
+      <Filter>Engine\Header\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RapidXML\rapidxml_utils.hpp">
+      <Filter>Engine\Header\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RapidXML\rapidxml.hpp">
+      <Filter>Engine\Header\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\QuickMaths.h">
+      <Filter>Engine\Header\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/BoxCollider.h">
+      <Filter>Engine\Header\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/CircleCollider.h">
+      <Filter>Engine\Header\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PolygonCollider.h">
+      <Filter>Engine\Header\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/RigidBody.h">
+      <Filter>Engine\Header\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/IRigidBodyObserver.h">
+      <Filter>Engine\Header\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\NLTmxMap.h">
+      <Filter>Engine\Header\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/SpriteRenderer.h">
+      <Filter>Engine\Header\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Player.h">
+      <Filter>Satanic Bird Cult\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/EndState.h">
+      <Filter>Satanic Bird Cult\Header\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/MenuState.h">
+      <Filter>Satanic Bird Cult\Header\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/GameState.h">
+      <Filter>Satanic Bird Cult\Header\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/State.h">
+      <Filter>Engine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/Collider.h">
+      <Filter>Engine\Header\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/Game.h">
+      <Filter>Satanic Bird Cult\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/Bird.h">
+      <Filter>Satanic Bird Cult\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/Debug.h">
+      <Filter>Engine\Header\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/SoundManager.h">
+      <Filter>Engine\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/Projectile.h">
+      <Filter>Satanic Bird Cult\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/Wall.h">
+      <Filter>Satanic Bird Cult\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/Spawn.h">
+      <Filter>Satanic Bird Cult\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\TimerManager.h">
+      <Filter>Engine\Header\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="../include/IntroState.h">
+      <Filter>Satanic Bird Cult\Header\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\BirdWall.h">
+      <Filter>Satanic Bird Cult\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Pentagram.h">
+      <Filter>Satanic Bird Cult\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Timer.h">
+      <Filter>Engine\Header\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ProjectileWall.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{21581f33-d7f1-4ced-8a76-73b082b9d4e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Satanic Bird Cult">
+      <UniqueIdentifier>{3fe7d53b-3ab5-4b8d-a2ce-1bf7c78fc1cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Header">
+      <UniqueIdentifier>{3ba3c1c6-a163-46d4-b983-35eeba24f276}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Header\Components">
+      <UniqueIdentifier>{f4b03b37-4bbc-48e5-8ae9-47d15a564941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Header\Components\Physics">
+      <UniqueIdentifier>{d46cb405-94ea-4c81-9cda-5e7e4e8e7a4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Header\Input">
+      <UniqueIdentifier>{97eef66d-27bc-42b3-8f10-9fa4c27c94f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Header\Game States">
+      <UniqueIdentifier>{c14ac9fc-4958-438e-8b25-2369df70191a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Header\Util">
+      <UniqueIdentifier>{93761148-8392-477c-bdd1-6e565c6e5ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source">
+      <UniqueIdentifier>{888bef7f-a20b-4c53-8d84-38be7f72f172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Components">
+      <UniqueIdentifier>{b13f8f06-fe99-4cfa-a18f-52456e8264cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Components\Physics">
+      <UniqueIdentifier>{06d3b806-7409-4d81-bd4b-307350bae13a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Input">
+      <UniqueIdentifier>{76f072c5-33c4-48f5-b9fa-4d4ab149df10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Util">
+      <UniqueIdentifier>{b048b772-285c-4595-a161-04fa1761d09d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Satanic Bird Cult\Source">
+      <UniqueIdentifier>{13a1756f-83cb-46f9-bb20-95517da4d941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Satanic Bird Cult\Header">
+      <UniqueIdentifier>{7349bc44-22e3-454c-ad9e-db071686791d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Satanic Bird Cult\Source\Game States">
+      <UniqueIdentifier>{e6fa28c4-1ecd-4198-900c-60a8974cff51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Satanic Bird Cult\Header\Game States">
+      <UniqueIdentifier>{d815fe62-dfaf-40dc-9566-76707332cbf2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ebd4e92b-34ec-4f3d-bf96-97fac3ebb687}</ProjectGuid>
+    <RootNamespace>GameEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\tmp\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <IntDir>$(SolutionDir)..\tmp\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SFMLROOT)\include;$(SolutionDir)..\include;$(SolutionDir)..\externals\TGUI-0.8\include</AdditionalIncludeDirectories>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SFMLROOT)/lib;$(SolutionDir)..\externals\TGUI-0.8\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-system-d.lib;sfml-window-d.lib;sfml-audio-d.lib;tgui-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SFMLROOT)/include;$(SolutionDir)..\include;$(SolutionDir)..\externals\TGUI-0.8\include</AdditionalIncludeDirectories>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SFMLROOT)/lib;$(SolutionDir)..\externals\TGUI-0.8\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-audio.lib;tgui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>tgui-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\externals\TGUI-0.8\include;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>tgui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\externals\TGUI-0.8\include;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\BirdWall.cpp" />
+    <ClCompile Include="..\source\Pentagram.cpp" />
+    <ClCompile Include="..\source\Player.cpp" />
+    <ClCompile Include="..\source\ProjectileWall.cpp" />
+    <ClCompile Include="..\source\QuickMaths.cpp" />
+    <ClCompile Include="..\source\PhysicsManager.cpp" />
+    <ClCompile Include="..\source\PolygonCollider.cpp" />
+    <ClCompile Include="..\source\StateManager.cpp" />
+    <ClInclude Include="..\include\BirdWall.h" />
+    <ClInclude Include="..\include\ContentLoader.h" />
+    <ClInclude Include="..\include\LayerRenderer.h" />
+    <ClInclude Include="..\include\Map.h" />
+    <ClInclude Include="..\include\Pentagram.h" />
+    <ClInclude Include="..\include\Player.h" />
+    <ClInclude Include="..\include\ProjectileWall.h" />
+    <ClInclude Include="..\include\QuickMaths.h" />
+    <ClInclude Include="..\include\NLTmxMap.h" />
+    <ClInclude Include="..\include\PhysicsManager.h" />
+    <ClInclude Include="..\include\PolygonCollider.h" />
+    <ClInclude Include="..\include\RapidXML\rapidxml.hpp" />
+    <ClInclude Include="..\include\RapidXML\rapidxml_iterators.hpp" />
+    <ClInclude Include="..\include\RapidXML\rapidxml_print.hpp" />
+    <ClInclude Include="..\include\RapidXML\rapidxml_utils.hpp" />
+    <ClInclude Include="../include/Game.h" />
+    <ClInclude Include="../include/State.h" />
+    <ClInclude Include="../include/MenuState.h" />
+    <ClInclude Include="../include/InputManager.h" />
+    <ClInclude Include="../include/GameObject.h" />
+    <ClInclude Include="../include/Component.h" />
+    <ClInclude Include="../include/GameObjectManager.h" />
+    <ClInclude Include="../include/SpriteRenderer.h" />
+    <ClInclude Include="../include/GameState.h" />
+    <ClInclude Include="../include/EndState.h" />
+    <ClInclude Include="../include/Background.h" />
+    <ClInclude Include="..\include\RenderComponent.h" />
+    <ClInclude Include="../include/RenderManager.h" />
+    <ClInclude Include="..\include\StateManager.h" />
+    <ClInclude Include="../include/Collider.h" />
+    <ClInclude Include="../include/BoxCollider.h" />
+    <ClInclude Include="../include/CircleCollider.h" />
+    <ClInclude Include="../include/RigidBody.h" />
+    <ClInclude Include="../include/IRigidBodyObserver.h" />
+    <ClInclude Include="../include/AnimationComponent.h" />
+    <ClInclude Include="../include/Gamepad.h" />
+    <ClInclude Include="../include/SoundManager.h" />
+    <ClInclude Include="../include/Projectile.h" />
+    <ClInclude Include="../include/Bird.h" />
+    <ClInclude Include="../include/Spawn.h" />
+    <ClInclude Include="../include/Debug.h" />
+    <ClInclude Include="../include/Wall.h" />
+    <ClInclude Include="../include/IntroState.h" />
+	<ClInclude Include="../include/InfoState.h" />
+	<ClInclude Include="../include/NoPointWall.h" />
+	<ClInclude Include="../include/CreditsState.h" />
+	  
+    <ClCompile Include="../source/Game.cpp" />
+    <ClCompile Include="../source/State.cpp" />
+    <ClCompile Include="../source/MenuState.cpp" />
+    <ClCompile Include="../source/InputManager.cpp" />
+    <ClCompile Include="../source/GameObject.cpp" />
+    <ClCompile Include="../source/Component.cpp" />
+    <ClCompile Include="../source/GameObjectManager.cpp" />
+    <ClCompile Include="../source/SpriteRenderer.cpp" />
+    <ClCompile Include="../source/GameState.cpp" />
+    <ClCompile Include="../source/EndState.cpp" />
+    <ClCompile Include="../source/Background.cpp" />
+    <ClCompile Include="..\source\ContentLoader.cpp" />
+    <ClCompile Include="..\source\LayerRenderer.cpp" />
+    <ClCompile Include="..\source\Map.cpp" />
+    <ClCompile Include="..\source\NLTmxMap.cpp" />
+    <ClCompile Include="..\source\RenderComponent.cpp" />
+    <ClCompile Include="..\source\RenderManager.cpp" />
+    <ClCompile Include="..\source\Collider.cpp" />
+    <ClCompile Include="..\source\BoxCollider.cpp" />
+    <ClCompile Include="..\source\CircleCollider.cpp" />
+    <ClCompile Include="..\source\RigidBody.cpp" />
+    <ClCompile Include="..\source\AnimationComponent.cpp" />
+    <ClCompile Include="..\source\Gamepad.cpp" />
+    <ClCompile Include="..\source\SoundManager.cpp" />
+    <ClCompile Include="..\source\Projectile.cpp" />
+    <ClCompile Include="..\source\Bird.cpp" />
+    <ClCompile Include="..\source\Spawn.cpp" />
+    <ClCompile Include="..\source\Debug.cpp" />
+    <ClCompile Include="..\source\Timer.cpp" />
+    <ClCompile Include="..\source\TimerManager.cpp" />
+    <ClCompile Include="..\source\Wall.cpp" />
+    <ClInclude Include="..\include\Timer.h" />
+    <ClInclude Include="..\include\TimerManager.h" />
+    <ClCompile Include="..\source\IntroState.cpp" />
+	<ClCompile Include="..\source\InfoState.cpp" />
+	<ClCompile Include="..\source\NoPointWall.cpp" />
+	<ClCompile Include="..\source\CreditsState.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
